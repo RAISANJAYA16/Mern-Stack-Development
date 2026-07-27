@@ -1,49 +1,148 @@
-# HTML/CSS/JS
-
-## World Wide Web (WWW)
-
+HTML/CSS/JS
+World Wide Web (WWW)
 It is a system of interlinked documents, system accessed through internet, using web browser.
 
 Websites/Webapps are made up of HTML, CSS, JS.
 
-## Client-Server Model
-
-- **Client**: The browser or app that sends requests to the server.
-- **Server**: The machine that hosts the website/webapp, process the request of the client and sends responses (HTML, CSS, data).
-
+Client-Server Model
+Client: The browser or app that sends requests to the server.
+Server: The machine that hosts the website/webapp, process the request of the client and sends responses (HTML, CSS, data).
 <hr/>
 
-## HTML (Hypertext Markup Language)
-
+HTML (Hypertext Markup Language)
 HTML is the standard markup language for creating web pages.
 
-### Text formatting elements/tags
-
-1. Headings -> <h1> - <h6>
-2. Paragraph -> <p>
-3. Bold -> <strong>
-4. Italics/Emphasize -> <em>
-5. Superscript -> <sup>
-6. Subscript -> <sub>
-7. Line break -> <br> (Not recommended, instead use CSS)
-8. Divider -> <hr>
-9. <pre>
-
-### List elements
-
-1. Ordered list -> <ol>
-2. Unordered list -> <ul>
-
+Text formatting elements/tags
+Headings -> <h1> - <h6>
+Paragraph -> <p>
+Bold -> <strong>
+Italics/Emphasize -> <em>
+Superscript -> <sup>
+Subscript -> <sub>
+Line break -> <br> (Not recommended, instead use CSS)
+Divider -> <hr>
+<pre>
+List elements
+Ordered list -> <ol>
+Unordered list -> <ul>
 List item -> <li>
 
-### Links, media
+Links, media, iframe
+Hyperlink -> <a href="url">Click</a>
 
-### Table
+Image -> <img src="path of image" alt=""/>
 
-### Form & input
+Video -> <video src="path of video"></video>
 
-### Semantics
+Iframe -> <iframe/>
 
-## CSS (Cascading style sheet)
+Table
+<table>
+<tr>
+<td>
+<thead>
+<tbody>
+rowspan colspan
 
-## JS (JavaScript)
+Inline & Block elements
+Inline: Covers only required width. <a>, <img>, <span>, <video>, <input>
+
+Block: Covers full width. <h1>, <p>, <div>, <section>, <ul>
+
+Form & input
+<form>
+<input>
+<label>
+<textarea>
+<select>
+<option>
+<datalist>
+Attributes
+
+type, id, for, name, value, placeholder, required, disabled
+Number, Range: min, max
+Text, Password: minlength, maxlength
+Select: selected
+Input types
+text
+email
+number
+password
+date
+time
+date-time-local
+range (min, max, step)
+color
+tel
+radio (name)
+checkbox
+file (accept, multiple)
+search
+Semantics
+Convention, best practice of using appropriate HTML elements
+<header>
+<nav>
+</header>
+<main>
+<section> <aside>
+<section>
+</main>
+<footer>
+CSS (Cascading style sheet)
+CSS is a style sheet used to style and layout web pages/HTML - colors, fonts, spacing, position, animation, view.
+Syntax
+<selector> {
+    property: value;
+    ....
+}
+h1 {
+    color:red;
+    font-weight:bold;
+}
+
+Selectors
+Element: element name h1, p, div | Least priority
+Class: .class-name | mid-priority (use for styling)
+Id: #id-name | top-priority
+// element
+h1 {
+    // your styles
+}
+
+// class
+.myclass {
+    // your styles
+}
+
+// id
+#myid {
+    // your styles
+}
+
+Usage
+Inline
+Internal
+External (Recommended)
+Properties
+color
+font
+text
+box-model: margin, padding, border, height, width
+gradient
+display
+flex (flexbox)
+list
+units (px, rem, em, cm, in, vh, vw)
+position
+pseudo-class: hover, active, focus, child
+overflow ==============
+table
+form
+grid
+flex grow, shrink
+transformation - translate, rotate, skew, scale
+misc - transition, background image
+animation
+google-fonts
+responsive
+pseudo-element
